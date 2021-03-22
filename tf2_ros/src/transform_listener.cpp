@@ -56,6 +56,8 @@ TransformListener::TransformListener(tf2::BufferCore& buffer, const ros::NodeHan
     initWithThread();
   else
     init();
+
+  ROS_INFO("[%s]: initializing MRS-patched tf listener", ros::this_node::getName().c_str());
 }
 
 TransformListener::~TransformListener()
